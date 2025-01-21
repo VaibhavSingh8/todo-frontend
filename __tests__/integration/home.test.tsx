@@ -4,5 +4,5 @@ import Home from "@/app/page";
 
 test("renders the homepage correctly", () => {
   const { getByText } = render(<Home />);
-  expect(getByText("Hello World!")).toBeDefined();
+  expect(getByText("Hello World this is a test deployment!")).toBeDefined();
 });
