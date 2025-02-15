@@ -46,9 +46,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Create env file
-        run: cp .env.sample .env.local
-
       - name: Run tests with coverage
         run: pnpm test:coverage
 
@@ -71,9 +68,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
-      - name: Create env file
-        run: cp .env.sample .env.local
 
       - name: Build
         run: pnpm build
